@@ -15,17 +15,30 @@ export class AppComponent {
 }*/
 export class AppComponent {
     usuario:UsuarioInt = {
-    nombre:"Alexis",
+    nombre:"",
     apellido: "Gualoto"
   }
 }
 url:string="https://angular.io";
 constructor (){
+  this.usuario.nombre = "alexis";
+  setTimeout (()=>{
+    this.usuario.nombre = "Ademir";
+  })
+  console.log(this.saludar(this.usuario.nombre,this.usuario.apellido));
+}
+/* anterior a la clase 23/05
+constructor (){
   console.log("constructor");
   this.holaMundo();
   // para el constructor  de saludar
   console.log(this.saludar(this.usuario.nombre,this.usuario.apellido));
-}
+}*/
+
+
+
+
+
 holaMundo(){
   console.log("Hola Mundo");
 }
