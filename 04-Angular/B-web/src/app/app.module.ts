@@ -5,7 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { InicioComponent } from './Componentes/inicio/inicio.component';
-import { EstiloComponent } from './Componentes/estilo/estilo.component';
+//noinspection TypeScriptCheckImport
+//import { EstiloComponent } from './Componentes/estilo/estilo.component';
 import { EstiloComponent } from './estilo/estilo.component';
 
 @NgModule({
